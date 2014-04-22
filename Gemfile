@@ -8,6 +8,9 @@ gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass', '2.0.0'
+gem 'bcrypt'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -49,6 +52,11 @@ end
 group :development, :test do
 
 gem 'rspec-rails', '2.9.0'
+<<<<<<< HEAD
+=======
+gem 'guard-rspec', '0.5.5'
+gem 'annotate', '~>2.4.1.beta'
+>>>>>>> filling-in-layout
 end
 # Gems used only for assets and not required
 # in production environments by default.
@@ -58,6 +66,18 @@ end
 
 group :test do
 gem 'capybara', '1.1.2'
+<<<<<<< HEAD
+=======
+
+gem 'rspec-rails', '2.9.0'
+gem 'rb-fchange', '0.0.5'
+gem 'rb-notifu', '0.0.4'
+gem 'win32console', '1.3.0'
+gem 'guard-spork', '0.3.2'
+gem 'spork', '0.9.0'
+gem 'factory_girl_rails', '1.4.0'
+
+>>>>>>> filling-in-layout
 end
 group :production do
 gem 'pg', '0.12.2'

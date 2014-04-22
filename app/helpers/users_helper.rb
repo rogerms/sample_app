@@ -5,4 +5,13 @@ module UsersHelper
 		gravatar_url = "http://www.gravatar.com/avatar/#{gravatar_id}.png"
 		image_tag(gravatar_url, alt: user.name, class: "gravatar")
 	end
+	
+	def full_title(page_title)
+		base_title = "Ruby on Rails Tutorial Sample App"
+		if page_title.empty?
+			base_title
+		else
+			"#{base_title} | #{page_title}"
+		end
+    end
 end

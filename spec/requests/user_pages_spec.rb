@@ -9,13 +9,13 @@ describe "User pages" do
 		it { should have_selector('title', text: "Ruby on Rails Tutorial Sample App | Sign up") }
 	end
 	
-	describe "profile page" do
-		# Code to make a user variable
-		let(:user) { FactoryGirl.create(:user) }
-		before { visit user_path(user) }
-		it { should have_selector('h1', text: user.name) }
-		it { should have_selector('title', text: user.name) }
-	end
+	# describe "profile page" do
+		# # Code to make a user variable
+		# let(:user) { FactoryGirl.create(:user) }
+		# before { visit user_path(user) }
+		# it { should have_selector('h1', text: user.name) }
+		# it { should have_selector('title', text: user.name) }
+	# end
 
 	
 	describe "signup" do

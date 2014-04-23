@@ -9,6 +9,7 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '2.0.0'
+#gem 'bootstrap-sass-extras'
 gem 'bcrypt'
 gem 'bcrypt-ruby', '~> 3.1.2'
 

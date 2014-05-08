@@ -13,6 +13,9 @@ gem 'bootstrap-sass'
 gem 'bootstrap-sass-extras'
 gem 'bcrypt'
 gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'faker', '1.0.1'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

@@ -24,11 +24,10 @@ SampleApp::Application.configure do
   
   # Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
-<<<<<<< HEAD
+
   # config.force_ssl = true
-=======
+
   #config.force_ssl = false
->>>>>>> sign-in-out
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

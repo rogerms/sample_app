@@ -21,6 +21,9 @@ describe User do
 	it { should respond_to(:password) }
 	it { should respond_to(:password_confirmation) }
 	it { should be_valid }
+	it { should respond_to(:admin) }
+  it { should respond_to(:microposts) }
+	
 	
 	describe "when password doesn't match confirmation" do
 		before { @user.password_confirmation = "mismatch" }

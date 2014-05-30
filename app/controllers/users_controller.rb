@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  before_filter :signed_in_user, only: [:index, :edit, :update, :destroy]
+  before_filter :signed_in_user, only: [:index, :edit, :update, :destroy, :following, :followers]
   before_filter :correct_user, only: [:edit, :update]
   before_filter :admin_user, only: :destroy
-  
+
   def new
     @user = User.new
   end
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
   def edit
     #old  @user = User.find(params[:id])
   end
-
+  
   def signed_in_user
     redirect_to signin_path, notice: "Please sign in." unless signed_in?
   end
@@ -91,4 +91,8 @@ class UsersController < ApplicationController
   end
 
 end
+
+
+
+
 

@@ -1,12 +1,10 @@
 class Micropost < ActiveRecord::Base
   belongs_to :user
-  #default_scope -> { order('created_at DESC') }
   validates :content, presence: true, length: { maximum: 140 }
   validates :user_id, presence: true
-  default_scope order: 'microposts.created at DESC'
+  default_scope order: 'microposts.created_at DESC'
   
   
-  # Returns microposts from the users being followed by the given user.
  def self.from_users_followed_by(user)
     followed_user_ids = "SELECT followed_id FROM relationships
 WHERE follower_id = :user_id"
@@ -15,4 +13,20 @@ WHERE follower_id = :user_id"
   end
 end
 
+
+
+
+=begin
+attr accessible :content
+belongs to :user
+validates :user id, presence: true
+default scope order: 'microposts.created at DESC'
+
+def self.from users followed by(user)
+followed user ids = "SELECT followed id FROM relationships
+WHERE follower id = :user id"
+where("user id IN (#{followed user ids}) OR user id = :user id",
+user id: user.id)
+end
+=end
 

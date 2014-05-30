@@ -3,7 +3,7 @@ class Micropost < ActiveRecord::Base
   #default_scope -> { order('created_at DESC') }
   validates :content, presence: true, length: { maximum: 140 }
   validates :user_id, presence: true
-  default_scope order: 'microposts.created at DESC'
+  default_scope order: 'microposts.created_at DESC'
   
   
   # Returns microposts from the users being followed by the given user.
